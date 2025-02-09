@@ -11,5 +11,11 @@ const calculateSalesTax = function(amount, taxRate) {
     let salesTax = amount * taxRate //Creates the formula needed to calculate the Sales Tax on a purchase
     return (salesTax) //Commands the equation to dsiplay the Sales Tax on a purchase
 };
-console.log("Sales Tax:$", calculateSalesTax(100, 0.07)); //Resgisters the values for Amount and Tax Rate to be put into the equation to calculate Sales Tax
-console.log("Sales Tax:$", calculateSalesTax(500, 0.1)); //Resgisters the values for Amount and Tax Rate to be put in the equation to calculate the Sales Tax
+console.log("Sales Tax:$", calculateSalesTax(100, 0.07)); //Registers the values for Amount and Tax Rate to be put into the equation to calculate Sales Tax
+console.log("Sales Tax:$", calculateSalesTax(500, 0.1)); //Registers the values for Amount and Tax Rate to be put in the equation to calculate the Sales Tax
+
+//Task 3: Arrow Function
+const calculateBonus = (salary, performanceRating) => salary * performanceRating; //Establishes the calculateBonus function and identifies the parts that will be used to make up the equation
+performanceRating = Excellent = 0.20, Good = 0.10, Average = 0.05 //Establishes the values for the performance ratings so that they can be implimented in the equation
+console.log("Bonus:$", calculateBonus(5000, Excellent)); //Logs the bonus one would recieve with a salary of $5000 and a 20% bonus to the console
+console.log("Bonus:$", calculateBonus(7000, Good)); //Logs the bonus one would recieve with a salary of 7000 and a 10% bonus to the console
