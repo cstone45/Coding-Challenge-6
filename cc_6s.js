@@ -19,3 +19,11 @@ const calculateBonus = (salary, performanceRating) => salary * performanceRating
 performanceRating = Excellent = 0.20, Good = 0.10, Average = 0.05 //Establishes the values for the performance ratings so that they can be implimented in the equation
 console.log("Bonus:$", calculateBonus(5000, Excellent)); //Logs the bonus one would recieve with a salary of $5000 and a 20% bonus to the console
 console.log("Bonus:$", calculateBonus(7000, Good)); //Logs the bonus one would recieve with a salary of 7000 and a 10% bonus to the console
+
+//Task 4: Parameters and Arguments
+function calculateSubscriptionCost(plan, month, discount = 0) {
+    return (plan * month) - discount
+}; //Establishes the function and the equation it will operate to find the Total Cost of a Subscription
+plan = Basic = 10, Premium = 20, Enterprise = 30; //Defines the value of each plan in terms of price in order to add it in the calculation
+console.log("Total Cost:$", calculateSubscriptionCost(Basic, 6, 10)); //Logs these values to the console and calculates a Total Cost from it ($50)
+console.log("Total Cost:$", calculateSubscriptionCost(Premium, 12, 0)); //Logs these values to the console and calculates a Total Cost from it ($240)
