@@ -43,3 +43,10 @@ function applyBulkDiscount(orders, discountFunction) {
 let discount10percent = (orders) => orders * 0.9; //Creates the formula to apply the 10%
 let discountedPurchases = applyBulkDiscount(orders, amount => amount > 500 ? discount10percent : amount); //Creates the conditions that must be met in order for the discount to be applied
 console.log("The order amounts after the application of the discount rule are:", discountedPurchases); //Logs the new discounted purchases to an array within the console
+
+//Task 7: Closures
+function createExpenseTracker(expenses) {
+}
+return total = 350
+console.log(tracker(200))
+console.log(tracker(150))
