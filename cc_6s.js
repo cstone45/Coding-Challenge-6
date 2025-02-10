@@ -50,3 +50,11 @@ function createExpenseTracker(expenses) {
 return total = 350
 console.log(tracker(200))
 console.log(tracker(150))
+
+//Task 8: Recursion in JavaScript
+function calculateYearsToPromotion(employeeLevel) {
+    if (employeeLevel === 0) return Level(0);
+    return calculateYearsToPromotion((0 + rate), rate, years - 2);
+}
+console.log(calculateYearsToPromotion(7));
+console.log(calculateYearsToPromotion(5))
