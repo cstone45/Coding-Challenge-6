@@ -34,3 +34,12 @@ function convertCurrency(amount, exchangeRate) {
 }
 console.log("Converted Amount:$",convertCurrency(100, 1.1)); //Logged the converted currency value achieved by plugging these values into the equation
 console.log("Converted Amount:$", convertCurrency(250, 0.85)); //Logged the converted currecy value achieved by plugging these values into the equation
+
+//Task 6: Higher-Order Functions
+let orders = [400, 300, 240, 360, 271]; //This Array establishes the initial Order amounts before the application of discounts
+function applyBulkDiscount(orders, discountFunction) {
+    return orders.map(discountFunction); //Prepares the function to generate a new Array when the discounts are applied
+}
+let discount10percent = (orders) => orders * 0.9; //Creates the formula to apply the 10%
+let discountedPurchases = applyBulkDiscount(orders, amount => amount > 500 ? discount10percent : amount); //Creates the conditions that must be met in order for the discount to be applied
+console.log("The order amounts after the application of the discount rule are:", discountedPurchases); //Logs the new discounted purchases to an array within the console
