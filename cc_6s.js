@@ -27,3 +27,10 @@ function calculateSubscriptionCost(plan, month, discount = 0) {
 plan = Basic = 10, Premium = 20, Enterprise = 30; //Defines the value of each plan in terms of price in order to add it in the calculation
 console.log("Total Cost:$", calculateSubscriptionCost(Basic, 6, 10)); //Logs these values to the console and calculates a Total Cost from it ($50)
 console.log("Total Cost:$", calculateSubscriptionCost(Premium, 12, 0)); //Logs these values to the console and calculates a Total Cost from it ($240)
+
+//Task 5: Returning Values
+function convertCurrency(amount, exchangeRate) {
+    return amount * exchangeRate //Sets up equation which will return our converted currency value
+}
+console.log("Converted Amount:$",convertCurrency(100, 1.1)); //Logged the converted currency value achieved by plugging these values into the equation
+console.log("Converted Amount:$", convertCurrency(250, 0.85)); //Logged the converted currecy value achieved by plugging these values into the equation
